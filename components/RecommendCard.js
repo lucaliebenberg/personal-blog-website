@@ -8,7 +8,7 @@ const RecommendCard = ({ title, description, href, tags, showLink = true }) =>
       className="md max-w-[34rem] p-2 md:w-1/2"
       showIcon={false}
     >
-      <div className="h-full overflow-hidden rounded-md border-2 border-solid border-gray-200 hover:border-primary-500 dark:border-gray-800 dark:hover:border-primary-500">
+      <div className="h-full overflow-hidden rounded-md border-2 border-solid border-gray-200 hover:border-blue-500 dark:border-gray-800 dark:hover:border-blue-500">
         <div className="p-6">
           <h4 className="mb-3 text-2xl font-bold leading-8 tracking-tight text-black dark:text-white">
             {title}{' '}
@@ -37,7 +37,7 @@ const RecommendCard = ({ title, description, href, tags, showLink = true }) =>
     </CustomLink>
   ) : (
     <div className="md max-w-[34rem] p-4 md:w-1/2">
-      <div className="h-full overflow-hidden rounded-md border-2 border-solid border-gray-200 hover:border-primary-500 dark:border-gray-800 dark:hover:border-primary-500">
+      <div className="h-full overflow-hidden rounded-md border-2 border-solid border-gray-200 hover:border-blue-500 dark:border-gray-800 dark:hover:border-blue-500">
         <div className="p-6">
           <h4 className="mb-3 text-2xl font-bold leading-8 tracking-tight text-black dark:text-white">
             {title}

@@ -24,8 +24,7 @@ export default function Home({ posts }) {
         <div className="mb-12 flex flex-col items-center gap-x-12 xl:flex-row">
           <div className="pt-6">
             <h1 className="pb-6 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-              Hi, I am{' '}
-              <span className="text-primary-color-500 dark:text-primary-color-dark-500">Luca</span>
+              Hi, I am <span className="dark:text-blue-dark-500 text-blue-500">Luca</span>
             </h1>
             <h2 className="prose pt-5 text-lg text-gray-600 dark:text-gray-300">
               {`Welcome to ${siteMetadata.description}. I am a Software Engineer who is passionate about Software and Business. In my free time, I like developing `}
@@ -37,7 +36,7 @@ export default function Home({ posts }) {
                 animate="true"
                 type="box"
                 show={true}
-                color="#DE1D8D"
+                color="#0000FF"
                 animationDelay={1000}
                 animationDuration={2500}
                 className="text-slate-200"
@@ -52,12 +51,12 @@ export default function Home({ posts }) {
                 animate="true"
                 type="highlight"
                 show={true}
-                color="#DE1D8D"
+                color="blue"
                 animationDelay={1000}
                 animationDuration={2500}
                 className="text-slate-200"
               >
-                learnings, thoughts & more. &nbsp;
+                thoughts, learnings & more. &nbsp;
               </RoughNotation>
               Have a good read!{' '}
               <div className="mt-8 text-slate-600 dark:text-slate-400">
@@ -135,7 +134,7 @@ export default function Home({ posts }) {
               <div className="my-2 grid items-start gap-8">
                 <div className="group relative">
                   <div className="animate-tilt absolute -inset-0.5 rounded-lg bg-gradient-to-r from-fuchsia-600 to-emerald-600 opacity-50 blur transition duration-1000 group-hover:opacity-100 group-hover:duration-200"></div>
-                  <Link href="https://parthdesai.vercel.app/">
+                  <Link href="https://lucaliebenberg.com/">
                     <span className="relative flex items-center divide-x divide-gray-600 rounded-lg bg-white px-7 py-4 leading-none dark:bg-black">
                       <span className="flex items-center space-x-5">
                         <svg
@@ -164,7 +163,7 @@ export default function Home({ posts }) {
               <div className="my-2 grid items-start gap-8">
                 <div className="group relative">
                   <div className="animate-tilt absolute -inset-0.5 rounded-lg bg-gradient-to-r  from-pink-600 to-purple-600 opacity-50 blur transition duration-1000 group-hover:opacity-100 group-hover:duration-200"></div>
-                  <Link href="https://parthdesai.vercel.app/resume.pdf">
+                  <Link href="https://google.com/">
                     <span className="relative flex items-center divide-x divide-gray-600 rounded-lg bg-white px-7 py-4 leading-none dark:bg-black">
                       <span className="flex items-center space-x-5">
                         <svg
@@ -229,7 +228,7 @@ export default function Home({ posts }) {
                             <h2 className="text-2xl font-bold leading-8 tracking-tight">
                               <Link
                                 href={`/blog/${slug}`}
-                                className="text-gray-900 transition duration-500 ease-in-out hover:text-primary-500 dark:text-gray-100 dark:hover:text-primary-500"
+                                className="text-gray-900 transition duration-500 ease-in-out hover:text-blue-500 dark:text-gray-100 dark:hover:text-blue-500"
                               >
                                 {title}
                               </Link>
@@ -257,7 +256,7 @@ export default function Home({ posts }) {
         <div className="flex justify-end pt-5 text-lg font-normal leading-6">
           <Link
             href="/blog"
-            className=" special-underline-new text-primary-500 hover:text-gray-100 hover:no-underline dark:text-primary-500 hover:dark:text-gray-100"
+            className=" special-underline-new text-blue-500 hover:text-gray-100 hover:no-underline dark:text-blue-500 hover:dark:text-gray-100"
             aria-label="all posts"
           >
             All Posts &rarr;

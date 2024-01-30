@@ -3,7 +3,7 @@ const siteMetadata = {
   author: 'Luca Liebenberg',
   headerTitle: 'TechFit.',
   description: 'My personal blog where I share what I learn',
-  snippets: 'Reuseable code snippets collected by Parth',
+  // snippets: 'Reuseable code snippets collected by Parth',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://google.com',

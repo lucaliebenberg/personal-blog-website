@@ -21,8 +21,7 @@ export default function Stats() {
             Stats
           </h1>
           <p className="text-md leading-7 text-gray-500 dark:text-gray-400">
-            I use this dashboard to track various metrics across platforms like Spotify, Twitter,
-            GitHub, and more.
+            I use this dashboard to track metrics across GitHub.
           </p>
         </div>
         <div className="pt-2">
@@ -30,16 +29,16 @@ export default function Stats() {
             <GithubPersonal />
             <GitHub />
           </div>
-          <div className="grid w-full grid-cols-1 gap-4 py-2  sm:grid-cols-2">
+          {/* <div className="grid w-full grid-cols-1 gap-4 py-2  sm:grid-cols-2">
             <Twitter type="followers" />
             <Twitter type="following" />
           </div>
           <div className="grid w-full grid-cols-1 gap-4 py-2 sm:grid-cols-2">
             <Twitter type="total_tweets" />
             <Analytics />
-          </div>
+          </div> */}
         </div>
-        <h2 className="mb-4 mt-16 text-3xl font-bold tracking-tight text-black dark:text-white">
+        {/* <h2 className="mb-4 mt-16 text-3xl font-bold tracking-tight text-black dark:text-white">
           My <span className="text-green-500">Spotify</span> Top Songs
         </h2>
         <p className="text-md mb-4 text-gray-600 dark:text-gray-400">
@@ -48,8 +47,8 @@ export default function Stats() {
         <div>
           <NowPlaying />
         </div>
-        <TopTracks />
-        <div className="flex flex-col pl-4 pt-10">
+        <TopTracks /> */}
+        {/* <div className="flex flex-col pl-4 pt-10">
           <p className="text-md text-gray-600 dark:text-gray-400">
             Do you know a good song I should listen to?
           </p>
@@ -62,7 +61,7 @@ export default function Stats() {
           >
             Parth you should listen to...
           </a>
-        </div>
+        </div> */}
       </div>
     </>
   )
