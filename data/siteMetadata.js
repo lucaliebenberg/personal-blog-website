@@ -1,6 +1,6 @@
 const siteMetadata = {
-  title: 'Blog | Parth Desai',
-  author: 'Parth Desai',
+  title: 'Blog | Luca Liebenberg',
+  author: 'Luca Liebenberg',
   headerTitle: 'Mere Musings',
   description: 'My personal blog where I share my musings',
   snippets: 'Reuseable code snippets collected by Parth',
@@ -11,10 +11,10 @@ const siteMetadata = {
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',
   socialBanner: '/static/images/twitter-card.png',
-  email: 'desaiparth2000@gmail.com',
-  github: 'https://github.com/pycoder2000',
+  email: 'liebenbergluca@gmail.com',
+  github: 'https://github.com/lucaliebenberg',
   twitter: 'https://twitter.com/_ParthDesai_',
-  linkedin: 'https://www.linkedin.com/in/parth-desai-2bb1b0160/',
+  linkedin: 'https://www.linkedin.com/in/lucaliebenberg/',
   website: 'https://parthdesai.vercel.app',
   locale: 'en-US',
   analytics: {
