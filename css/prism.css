@@ -31,8 +31,9 @@
   @apply bg-red-500 bg-opacity-20;
 }
 
+/* TODO: add a from to color, that is defined within a @layer */
 .highlight-line {
-  @apply -mx-4 border-l-4 border-primary-500  bg-gray-700 bg-opacity-50;
+  @apply -mx-4 border-l-4  bg-gray-700 bg-opacity-50;
 }
 
 .line-number::before {

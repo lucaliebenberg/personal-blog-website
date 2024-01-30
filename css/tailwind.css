@@ -20,25 +20,25 @@
 
 @layer utilities {
   .special-underline {
-    @apply bg-gradient-to-r from-primary-color-500 to-primary-color-500 bg-no-repeat pb-0.5
-      font-normal [background-position:0_100%]
-      [background-size:100%_0.2em]
-      hover:text-white hover:[background-size:100%_100%]
+    @apply from-blue-400-color-500 from-blue-400-color-500 dark:from-blue-color-dark-500 dark:to-bluw-color-dark-500 bg-gradient-to-r
+      bg-no-repeat pb-0.5
+      font-normal
+      [background-position:0_100%] [background-size:100%_0.2em]
+      hover:text-white
+      hover:[background-size:100%_100%]
       focus:[background-size:100%_100%]
-      motion-safe:transition-all
-      motion-safe:duration-300
-      dark:from-primary-color-dark-500 dark:to-primary-color-dark-500 dark:hover:text-white;
+      motion-safe:transition-all motion-safe:duration-300 dark:hover:text-white;
   }
 
   .special-underline-new {
-    @apply bg-gradient-to-r from-primary-color-500 to-primary-color-500 bg-no-repeat pb-1
-      font-normal [background-position:0_100%]
-      [background-size:100%_0.1em]
-      hover:text-white hover:[background-size:100%_100%]
+    @apply from-blue-400-color-500 from-blue-400-color-500 dark:from-blue-400-color-500 dark:to-blue-400-color-500 bg-gradient-to-r
+      bg-no-repeat pb-1
+      font-normal
+      [background-position:0_100%] [background-size:100%_0.1em]
+      hover:text-white
+      hover:[background-size:100%_100%]
       focus:[background-size:100%_100%]
-      motion-safe:transition-all
-      motion-safe:duration-300
-      dark:from-primary-color-dark-500 dark:to-primary-color-dark-500 dark:hover:text-white;
+      motion-safe:transition-all motion-safe:duration-300 dark:hover:text-white;
   }
 
   .company {
