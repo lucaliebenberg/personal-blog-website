@@ -1,21 +1,21 @@
 const siteMetadata = {
   title: 'Blog | Luca Liebenberg',
   author: 'Luca Liebenberg',
-  headerTitle: 'Mere Musings',
-  description: 'My personal blog where I share my musings',
+  headerTitle: 'TechFit.',
+  description: 'My personal blog where I share what I learn',
   snippets: 'Reuseable code snippets collected by Parth',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://musing.vercel.app',
-  siteRepo: 'https://github.com/pycoder2000/blog',
+  siteUrl: 'https://google.com',
+  siteRepo: 'https://github.com/lucaliebenberg/personal-blog-website',
   siteLogo: '/static/images/logo.png',
-  image: '/static/images/avatar.png',
+  image: '/static/images/portfolio-image.png',
   socialBanner: '/static/images/twitter-card.png',
   email: 'liebenbergluca@gmail.com',
   github: 'https://github.com/lucaliebenberg',
-  twitter: 'https://twitter.com/_ParthDesai_',
+  twitter: 'https://twitter.com/',
   linkedin: 'https://www.linkedin.com/in/lucaliebenberg/',
-  website: 'https://parthdesai.vercel.app',
+  website: 'https://lucaliebenberg.com',
   locale: 'en-US',
   analytics: {
     plausibleDataDomain: '', // e.g. tailwind-nextjs-starter-blog.vercel.app
