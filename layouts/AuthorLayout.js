@@ -78,22 +78,20 @@ export default function AuthorLayout({ children, frontMatter }) {
             </p>
             <br />
             <p>
-              This is what I am doing right{' '}
+              This is my Github if you want to check{' '}
               <Link
-                href={'/now'}
+                href={'www.github.com/lucaliebenberg/'}
                 className="special-underline no-underline hover:text-gray-100 dark:text-gray-100 hover:dark:text-gray-100"
               >
-                now
+                me
               </Link>
+              out.
             </p>
             <br />
             <p className="sm:block md:hidden lg:hidden">
               I am always looking to learn new things. I am currently working on a few projects
               related to
-              <span className="font-semibold">
-                {' '}
-                Natural Language Processing and Machine Learning.{' '}
-              </span>
+              <span className="font-semibold"> JSON APIs and Microservices, using Go. </span>
               At the same time I am{' '}
               <RoughNotation
                 type="underline"
@@ -103,43 +101,14 @@ export default function AuthorLayout({ children, frontMatter }) {
                 animationDuration={3000}
                 multiline={true}
               >
-                actively on the lookout for remote internships which I can pursue in field of Data
-                Science.
-              </RoughNotation>
-            </p>
-            <p className="hidden md:block">
-              I am always looking to learn new things. I am currently working on a few projects
-              related to{' '}
-              <RoughNotation
-                animationDelay="1000"
-                animationDuration="3000"
-                type="highlight"
-                color="#0ea4e9"
-                strokeWidth="3"
-                show={true}
-              >
-                <span className="text-black dark:text-white">
-                  Natural Language Processing and Machine Learning.{' '}
-                </span>
-              </RoughNotation>
-              At the same time I am{' '}
-              <RoughNotation
-                type="underline"
-                show={true}
-                color="#FBCFE8"
-                animationDelay={1500}
-                animationDuration={3000}
-                multiline={true}
-              >
-                actively on the lookout for remote internships which I can pursue in field of Data
-                Science
+                actively learning Digital Marketing, Fullstack & Algorithms + Data Structures.
               </RoughNotation>
             </p>
             <br />
             <p>
-              I am a strong advocate for open source and I am always interested in working on new
-              projects with new people. Feel free to reach out if you have anything to talk about,
-              you can reach me through{' '}
+              I am a strong advocate for constant upskilling and I am always interested in working
+              on new projects with new people. Feel free to reach out if you have anything to talk
+              about, you can reach me through{' '}
               <Link
                 href={'mailto:liebenbergluca@gmail.com'}
                 className="special-underline no-underline hover:text-gray-100 dark:text-gray-100 hover:dark:text-gray-100"
@@ -183,12 +152,12 @@ export default function AuthorLayout({ children, frontMatter }) {
             <br />
             <p>
               <Link
-                href={'/uses'}
+                href={'/blog'}
                 className="special-underline no-underline hover:text-gray-100 dark:text-gray-100 hover:dark:text-gray-100"
               >
                 Here
               </Link>{' '}
-              you can see what I use on daily basis
+              you can see some blog posts that I have written
             </p>
             <br />
           </div>

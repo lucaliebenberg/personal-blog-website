@@ -10,7 +10,7 @@ export const navigation = {
     // { name: 'Uses', href: '/uses' },
     { name: 'Now', href: '/now' },
     { name: 'Stats', href: '/stats' },
-    { name: 'Activity', href: '/activity' },
+    // { name: 'Activity', href: '/activity' },
     // { name: 'Guestbook', href: '/guestbook' },
     // { name: 'Recommends', href: '/recommends' },
     { name: 'Journey', href: '/journey' },
