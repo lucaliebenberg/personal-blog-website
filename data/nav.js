@@ -8,7 +8,7 @@ export const navigation = {
     // { name: 'Snippets', href: '/snippets' },
     { name: 'Contact', href: '/contact' },
     // { name: 'Uses', href: '/uses' },
-    { name: 'Now', href: '/now' },
+    // { name: 'Now', href: '/now' },
     { name: 'Stats', href: '/stats' },
     // { name: 'Activity', href: '/activity' },
     // { name: 'Guestbook', href: '/guestbook' },

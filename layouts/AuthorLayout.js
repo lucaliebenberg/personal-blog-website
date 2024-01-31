@@ -78,20 +78,23 @@ export default function AuthorLayout({ children, frontMatter }) {
             </p>
             <br />
             <p>
-              This is my Github if you want to check{' '}
+              This is my Github if you want to check me {'  '}
+              {'  '}
               <Link
-                href={'www.github.com/lucaliebenberg/'}
+                href={'https://github.com/lucaliebenberg'}
                 className="special-underline no-underline hover:text-gray-100 dark:text-gray-100 hover:dark:text-gray-100"
               >
-                me
+                out
               </Link>
-              out.
             </p>
             <br />
             <p className="sm:block md:hidden lg:hidden">
               I am always looking to learn new things. I am currently working on a few projects
               related to
-              <span className="font-semibold"> JSON APIs and Microservices, using Go. </span>
+              <span className="font-semibold">
+                {' '}
+                building JSON APIs and Microservices, using Go.{' '}
+              </span>
               At the same time I am{' '}
               <RoughNotation
                 type="underline"
@@ -101,7 +104,8 @@ export default function AuthorLayout({ children, frontMatter }) {
                 animationDuration={3000}
                 multiline={true}
               >
-                actively learning Digital Marketing, Fullstack & Algorithms + Data Structures.
+                actively learning Digital Marketing, Fullstack Blockchain & Algorithms + Data
+                Structures.
               </RoughNotation>
             </p>
             <br />
