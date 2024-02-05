@@ -4,7 +4,7 @@ import Link from '@/components/Link'
 import Experience from '@/components/Experience'
 import experienceData from '@/data/experienceData'
 import { RoughNotation } from 'react-rough-notation'
-import { AiOutlineTwitter } from 'react-icons/ai'
+import { AiOutlineLinkedin, AiOutlineTwitter } from 'react-icons/ai'
 
 export default function AuthorLayout({ children, frontMatter }) {
   const {
@@ -47,12 +47,12 @@ export default function AuthorLayout({ children, frontMatter }) {
             <div className="flex flex-col pt-3">
               <a
                 className="rounded-full border px-8 py-2 text-center text-sm font-light text-gray-700 transition-colors hover:border-[#1DA1F2] hover:bg-[#1DA1F2] hover:text-white hover:shadow dark:text-white"
-                href="https://twitter.com/messages/compose?recipient_id=4302974298&text=Hey Parth"
-                data-screen-name="@_ParthDesai_"
+                href="https://www.linkedin.com/in/luca-liebenberg/"
+                data-screen-name="@lucaliebenberg"
                 target="_blank"
                 rel="noreferrer noopener"
               >
-                <AiOutlineTwitter className="mr-2 mb-0.5 inline h-5 w-5" />
+                <AiOutlineLinkedin className="mr-2 mb-0.5 inline h-5 w-5" />
                 Say Hi!
               </a>
             </div>
@@ -67,12 +67,13 @@ export default function AuthorLayout({ children, frontMatter }) {
                 animationDelay={300}
                 animationDuration={3000}
               >
-                {text1} Currently, I am focused on building data pipelines and automating them at{' '}
+                {text1} Currently, I am focused on building APIs and backend architecture in Python,
+                and JavaScript/TypeScript for frontend interfaces, at{' '}
                 <Link
-                  href={'https://www.accenture.com/in-en'}
+                  href={'https://www.trinity.co.za/'}
                   className="special-underline no-underline hover:text-gray-100 dark:text-gray-100 hover:dark:text-gray-100"
                 >
-                  Accenture
+                  Trinity IoT
                 </Link>
               </RoughNotation>
             </p>
@@ -111,8 +112,8 @@ export default function AuthorLayout({ children, frontMatter }) {
             <br />
             <p>
               I am a strong advocate for constant upskilling and I am always interested in working
-              on new projects with new people. Feel free to reach out if you have anything to talk
-              about, you can reach me through{' '}
+              on new projects with new people, putting the new knowledge to practice. Feel free to
+              reach out if you have anything to talk about, you can reach me through{' '}
               <Link
                 href={'mailto:liebenbergluca@gmail.com'}
                 className="special-underline no-underline hover:text-gray-100 dark:text-gray-100 hover:dark:text-gray-100"
