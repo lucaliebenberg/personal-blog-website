@@ -13,7 +13,7 @@ export const navigation = {
     // { name: 'Activity', href: '/activity' },
     // { name: 'Guestbook', href: '/guestbook' },
     // { name: 'Recommends', href: '/recommends' },
-    { name: 'Journey', href: '/journey' },
+    // { name: 'Journey', href: '/journey' },
     { name: 'Quotes', href: '/quotes' },
     // { name: 'Tweets', href: '/tweets' },
     // { name: 'RSS', href: '/feed.xml' },

@@ -135,10 +135,10 @@ export default function AuthorLayout({ children, frontMatter }) {
               </Link>{' '}
               or{' '}
               <Link
-                href={'https://api.whatsapp.com/send?phone=270616458869&text=hi'}
+                href={'https://www.linkedin.com/in/luca-liebenberg/'}
                 className="special-underline no-underline hover:text-gray-100 dark:text-gray-100 hover:dark:text-gray-100"
               >
-                Whatsapp
+                LinkedIin
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -167,15 +167,15 @@ export default function AuthorLayout({ children, frontMatter }) {
             <br />
           </div>
         </div>
-        <div className="mt-10 md:pl-16">
+        {/* <div className="mt-10 md:pl-16">
           <div className="space-y-2 pt-6 pb-8 md:space-y-5">
             <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
               Experience
             </h1>
           </div>
-          {/* TODO: uncomment if want to display work experience */}
+          TODO: uncomment if want to display work experience
           <div className="max-w-none pt-8 pb-8 xl:col-span-2">
-            {/* {experienceData.map((d) => (
+            {experienceData.map((d) => (
               <Experience
                 key={d.company}
                 title={d.title}
@@ -187,9 +187,9 @@ export default function AuthorLayout({ children, frontMatter }) {
                 text2={d.text2}
                 text3={d.text3}
               />
-            ))} */}
+            ))}
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   )
