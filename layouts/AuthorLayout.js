@@ -173,8 +173,9 @@ export default function AuthorLayout({ children, frontMatter }) {
               Experience
             </h1>
           </div>
+          {/* TODO: uncomment if want to display work experience */}
           <div className="max-w-none pt-8 pb-8 xl:col-span-2">
-            {experienceData.map((d) => (
+            {/* {experienceData.map((d) => (
               <Experience
                 key={d.company}
                 title={d.title}
@@ -186,7 +187,7 @@ export default function AuthorLayout({ children, frontMatter }) {
                 text2={d.text2}
                 text3={d.text3}
               />
-            ))}
+            ))} */}
           </div>
         </div>
       </div>

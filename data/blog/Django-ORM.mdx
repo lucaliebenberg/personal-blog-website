@@ -1,6 +1,6 @@
 ---
 title: Exploring A Comprehensive Guide for Django Beginners
-date: '2022-06-05'
+date: '2024-02-10'
 tags: ['tech', 'django', 'web development', 'orm', 'databases']
 draft: false
 summary: Delve into the Django ORM (Object-Relational Mapping) and learn how to interact with databases seamlessly in Django projects, covering essential concepts, best practices, and advanced techniques for managing database operations effectively.
@@ -15,3 +15,122 @@ We'll cover essential topics such as defining Django models to represent databas
 Additionally, we'll dive into advanced techniques such as optimizing database queries with select_related() and prefetch_related(), handling relationships between Django models using ForeignKey, OneToOneField, and ManyToManyField, and integrating third-party libraries for advanced ORM functionalities.
 
 By the end of this guide, beginner developers will have a solid understanding of Django ORM and be equipped with the knowledge and skills to build robust and scalable web applications with Django.
+
+## 1. Defining Django models
+
+Django models define the structure of database tables. Here's an example of defining a simple model:
+
+```Python
+
+# models.py
+from django.db import models
+
+class Product(models.Model):
+    name = models.CharField(max_length=100)
+    price = models.DecimalField(max_digits=10, decimal_places=2)
+
+
+```
+
+## 2. Database Migrations
+
+Django's migration system manages changes to your database schema. Here's how to create and apply migrations
+
+```python
+
+$ python manage.py makemigrations
+$ python manage.py migrate
+
+```
+
+## 3. Querying Data with Django QuerySets
+
+Django QuerySets allow you to interact with your database. Here's how to retrieve and filter data
+
+```python
+
+# views.py
+from django.shortcuts import render
+from .models import Product
+
+def product_list(request):
+    products = Product.objects.filter(price__gte=10)  # Get products with price greater than or equal to 10
+    return render(request, 'product_list.html', {'products': products})
+
+```
+
+## 4. Performing CRUD Operations
+
+Django's ORM provides an API for CRUD operations. Here's an example of creating, reading, updating, and deleting records
+
+```python
+
+# Creating a new product
+new_product = Product.objects.create(name='New Product', price=20.99)
+
+# Reading a product
+product = Product.objects.get(pk=1)
+
+# Updating a product
+product.price = 25.99
+product.save()
+
+# Deleting a product
+product.delete()
+
+```
+
+## 5. Optimizing Database Queries
+
+Django provides methods like select_related() and prefetch_related() to optimize database queries. Here's how to use them
+
+```python
+
+# views.py
+from django.shortcuts import render
+from .models import Author, Book
+
+def book_list(request):
+    books = Book.objects.select_related('author').all()  # Optimized query to fetch books with related authors
+    return render(request, 'book_list.html', {'books': books})
+
+
+```
+
+## 6. Handling Relationships
+
+Django supports various types of relationships between models. Here's how to define and use relationships
+
+```python
+
+# models.py
+class Author(models.Model):
+    name = models.CharField(max_length=100)
+
+class Book(models.Model):
+    title = models.CharField(max_length=100)
+    author = models.ForeignKey(Author, on_delete=models.CASCADE)
+
+```
+
+## 7. Integrating Third-Party Libraries
+
+Django's ORM can be extended with third-party libraries for advanced functionalities. Here's an example of integrating django-filter for filtering querysets
+
+```python
+
+# views.py
+from django.shortcuts import render
+from django_filters import FilterSet
+from .models import Product
+from .filters import ProductFilter
+
+def product_list(request):
+    filter = ProductFilter(request.GET, queryset=Product.objects.all())
+    return render(request, 'product_list.html', {'filter': filter})
+
+```
+
+## Conclusion
+
+By mastering these concepts and techniques, beginner developers can effectively manage database operations in Django projects and build robust and scalable web applications.
