@@ -27,7 +27,7 @@ export default function Home({ posts }) {
               Hi, I am <span className="dark:text-blue-dark-500 text-blue-500">Luca</span>
             </h1>
             <h2 className="prose pt-5 text-lg text-gray-600 dark:text-gray-300">
-              {`Welcome to ${siteMetadata.description}. I am a Software Engineer who is passionate about Software and Business. In my free time, I like developing `}
+              {`Welcome to ${siteMetadata.description}. I am a Software Developer who is passionate about Software and Business. In my free time, I like developing `}
               side projects and learning new technologies, whilst learning business and marketing.
             </h2>
             <p className="pt-5 text-lg leading-7 text-slate-600 dark:text-slate-300 sm:block md:hidden lg:hidden">

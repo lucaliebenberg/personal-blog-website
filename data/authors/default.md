@@ -1,7 +1,7 @@
 ---
 name: Luca Liebenberg
 avatar: /static/images/portfolio-image.png
-occupation: Software Engineer
+occupation: Software Developer
 company: Trinity IoT
 email: liebenbergluca@gmail.com
 twitter: https://twitter.com/
