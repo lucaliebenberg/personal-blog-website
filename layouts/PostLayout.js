@@ -88,20 +88,20 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                           alt="avatar"
                           className="h-10 w-10 rounded-full"
                           placeholder="blur"
-                          blurDataURL="/static/images/SVG-placeholder.png"
+                          blurDataURL="/static/images/portfolio-image.png"
                         />
                       )}
                       <dl className="whitespace-nowrap text-sm font-medium leading-5">
                         <dt className="sr-only">Name</dt>
                         <dd className="text-gray-900 dark:text-gray-100">{author.name}</dd>
                         <dt className="sr-only">LinkedIn</dt>
-                        <dd>
-                          {author.linkedin && (
+                        <dd className="">
+                          {/* {author.linkedin && (
                             <Link
                               href={author.linkedin}
-                              className="text-blue-500 hover:text-primary-600 dark:hover:text-primary-400"
+                              className="pr-[2rem] text-blue-500 hover:text-primary-600 dark:hover:text-primary-400"
                             >
-                              {author.linkedin.replace('https://linkedin.com/', '@')}
+                              {author.linkedin.replace('@')}
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 24 24"
@@ -116,7 +116,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                                 </g>
                               </svg>
                             </Link>
-                          )}
+                          )} */}
                         </dd>
                       </dl>
                     </li>
