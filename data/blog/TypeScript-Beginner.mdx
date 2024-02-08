@@ -1,0 +1,125 @@
+---
+title: Getting Started with TypeScript for Beginners
+date: '2024-02-20'
+tags: ['tech', 'typescript', 'web-development', 'javascript']
+draft: false
+summary: Explore TypeScript, a statically typed superset of JavaScript, and learn how to write more scalable and maintainable web applications, covering essential concepts, best practices, and hands-on examples for beginners.
+---
+
+<img className="inline" src="/static/images/Blog/beginner-ts.png" alt="TypeScript thumbnail" />
+
+TypeScript is a powerful language that builds on JavaScript by adding static types. In this beginner's tutorial, we'll introduce you to TypeScript and guide you through the basics of writing TypeScript code.
+
+## 1. Installing TypeScript
+
+First, let's install TypeScript globally using npm, Node.js's package manager:
+
+```python
+
+$ npm install -g typescript
+
+```
+
+## 2. Writing TypeScript Code
+
+Create a new TypeScript file called "hello.ts" and write a simple TypeScript code:
+
+```python
+
+// hello.ts
+function greet(name: string) {
+    return `Hello, ${name}!`;
+}
+
+console.log(greet('World'));
+
+```
+
+## 3. Compiling TypeScript
+
+Compile your TypeScript code into JavaScript using the TypeScript compiler (tsc):
+
+```python
+
+tsc hello.ts
+
+```
+
+This will generate a JavaScript file "hello.js" that you can run in your browser or Node.js environment.
+
+## 4. TypeScript Syntax
+
+Learn about TypeScript's syntax and features such as static typing, interfaces, classes, and modules by exploring the official TypeScript documentation and tutorials.
+
+```typescript
+// Defining a simple TypeScript function with static typing
+function greet(name: string): string {
+  return `Hello, ${name}!`
+}
+
+// Calling the function with a string argument
+const message: string = greet('World')
+
+// Logging the message to the console
+console.log(message)
+```
+
+In this example, we define a TypeScript function greet that takes a name parameter of type string and returns a string greeting. The function is called with the argument 'World', and the resulting message is logged to the console.
+
+## 5. Integrating TypeScript with Web Applications
+
+Integrate TypeScript into your web applications by adding TypeScript files to your project, configuring TypeScript compiler options, and leveraging TypeScript's features to write more scalable and maintainable code.
+
+To integrate TypeScript into a web application, you'll typically follow these steps:
+
+### 1. Create TypeScript Files: Write your TypeScript code in .ts files within your project directory. For example, create a file named app.ts:
+
+```typescript
+// app.ts
+function greet(name: string): string {
+  return `Hello, ${name}!`
+}
+
+const message: string = greet('World')
+document.getElementById('output').textContent = message
+```
+
+### 2. Compile TypeScript: Compile your TypeScript files into JavaScript using the TypeScript compiler (tsc). Run the following command in your terminal:
+
+```python
+
+tsc app.ts
+
+```
+
+This will generate a JavaScript file (app.js) from your TypeScript code.
+
+### 3. Link JavaScript in HTML: Link the compiled JavaScript file (app.js) in your HTML file:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TypeScript Example</title>
+  </head>
+  <body>
+    <div id="output"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
+```
+
+### 4. Serve the Application: Serve your web application using a local development server (e.g., live-server, http-server) to view the output in the browser:
+
+```python
+
+live-server
+
+```
+
+This will start a development server and open your web application in the default web browser. This will require you to have the live server extension installed, if you are using VS Code. If not, run the live server which you have access to.
+
+## Conclusion
+
+By following these steps, you can seamlessly integrate TypeScript into your web applications, allowing you to write more scalable and maintainable code with the benefits of static typing and advanced JavaScript features.

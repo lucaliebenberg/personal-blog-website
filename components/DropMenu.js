@@ -169,7 +169,7 @@ export default function DropMenu() {
             </Menu.Item> */}
           </div>
           <div className="py-1">
-            <Menu.Item>
+            {/* <Menu.Item>
               {({ active }) => (
                 <Link href="/contact">
                   <a
@@ -186,7 +186,7 @@ export default function DropMenu() {
                   </a>
                 </Link>
               )}
-            </Menu.Item>
+            </Menu.Item> */}
             <Menu.Item>
               {({ active }) => (
                 <Link href="/tags">

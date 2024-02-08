@@ -6,7 +6,7 @@ export const navigation = {
     // { name: 'Projects', href: '/projects' },
     { name: 'Tags', href: '/tags' },
     // { name: 'Snippets', href: '/snippets' },
-    { name: 'Contact', href: '/contact' },
+    // { name: 'Contact', href: '/contact' },
     // { name: 'Uses', href: '/uses' },
     // { name: 'Now', href: '/now' },
     { name: 'Stats', href: '/stats' },
