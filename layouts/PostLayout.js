@@ -63,9 +63,10 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                   {readingTime.text}
                 </span>
                 <span className="flex items-center gap-1.5">
-                  <HiOutlineEye className="h-5 w-5" />
-                  <ViewCounter className="ml-0" slug={slug} blogPage={true} />
-                  <div className="-ml-0.5">Views</div>
+                  {/* TODO: enable when views is wanted to be active and work with Prisma DB */}
+                  {/* <HiOutlineEye className="h-5 w-5" /> */}
+                  {/* <ViewCounter className="ml-0" slug={slug} blogPage={true} />
+                  <div className="-ml-0.5">Views</div> */}
                 </span>
               </div>
             </div>
