@@ -1,0 +1,105 @@
+---
+title: Making API Fetch Requests in Vanilla JavaScript
+date: '2024-02-22'
+tags: ['javascript', 'web-development', 'API']
+draft: false
+summary: Learn how to make API fetch requests in JavaScript to interact with API endpoints. Explore the fundamentals of fetching data, handling responses, and error handling for beginners and intermediate developers.
+---
+
+<img className="inline" src="/static/images/Blog/js-thumbnail-1.jpeg" alt="JavaScript thumbnail" />
+
+In this beginner-friendly tutorial, we'll explore how to make API fetch requests in JavaScript to interact with API endpoints. Whether you're a beginner or an intermediate developer, you'll learn the fundamentals of fetching data, handling responses, and error handling to build powerful web applications.
+
+## 1. Understanding API Fetch Requests
+
+API fetch requests in JavaScript allow you to communicate with remote servers and retrieve data. The fetch() function is a modern and powerful API for making network requests in the browser and Node.js environments. Not many beginners are aware of this, but the API is in fact a facade function that triggers a Web Browser API. Yes, the fetch() function is not actually a JavaScript API, but a facade function that triggers a Web Browser API, which executes fetch.
+
+```javascript
+fetch('https://api.example.com/data')
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok')
+    }
+    return response.json()
+  })
+  .then((data) => {
+    console.log(data)
+  })
+  .catch((error) => {
+    console.error('There was a problem with your fetch operation:', error)
+  })
+```
+
+In this example, we use the fetch() function to make a GET request to the specified URL. We handle the response using promises and convert the response body to JSON format. If you are not too familiar with what Promises are, you can be within the next week, as JavaScript Promises is the next post topic.
+
+## 2. Making GET Requests
+
+To make a GET request and retrieve data from an API endpoint, as we stated above, you can use the fetch() function with the URL of the API endpoint that you wish to make use of. This can be a public API, or an API you have built. The execution will be exactly the same.
+
+```javascript
+fetch('https://api.example.com/data')
+  .then((response) => response.json())
+  .then((data) => {
+    console.log(data)
+  })
+  .catch((error) => {
+    console.error('There was a problem with your fetch operation:', error)
+  })
+```
+
+This code snippet makes a GET request to the specified URL and logs the response data to the console.
+
+## 3. Making POST Requests
+
+To make a POST request and send data to an API endpoint, you can specify additional options in the fetch() function, such as the method and body of the request. Notice there is something called headers. In HTTP (Hypertext Transfer Protocol), "application/json" is a standard MIME type used to indicate that the content being sent or received is in JSON (JavaScript Object Notation) format. JSON is commonly used for exchanging data between a web server and a client, as it's lightweight and easy for both humans and machines to read and write.
+
+When a client sends a request to a server with the "Content-Type: application/json" header, it indicates that the body of the request contains JSON-formatted data. Similarly, when a server responds with a "Content-Type: application/json" header, it signifies that the body of the response is in JSON format.
+
+This content type is crucial for proper communication between client and server, ensuring that both sides understand the format of the data being exchanged. It's widely used in modern web development, especially in RESTful APIs, where JSON is a common choice for data serialization.
+
+```javascript
+fetch('https://api.example.com/create', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+  },
+  body: JSON.stringify({ key: 'value' }),
+})
+  .then((response) => response.json())
+  .then((data) => {
+    console.log(data)
+  })
+  .catch((error) => {
+    console.error('There was a problem with your fetch operation:', error)
+  })
+```
+
+This code snippet makes a POST request to the specified URL with JSON data in the request body.
+
+## 4. Error Handling
+
+When making API fetch requests, it's essential to handle errors gracefully to provide a better user experience. You can use the catch() method to catch and handle any errors that occur during the fetch operation.
+
+```javascript
+fetch('https://api.example.com/data')
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok')
+    }
+    return response.json()
+  })
+  .then((data) => {
+    console.log(data)
+  })
+  .catch((error) => {
+    console.error('There was a problem with your fetch operation:', error)
+  })
+```
+
+In this example, we define a TypeScript function greet that takes a name parameter of type string and returns a string greeting. The function is called with the argument 'World', and the resulting message is logged to the console.
+
+## 5 . Conclusion
+
+By mastering API fetch requests in JavaScript, you can build powerful web applications that communicate with remote servers and retrieve data dynamically. Experiment with different endpoints, methods, and error handling strategies to create robust and scalable applications.
+
+Continue learning and exploring JavaScript's rich ecosystem and documentation to further enhance your skills and build more sophisticated web applications.
