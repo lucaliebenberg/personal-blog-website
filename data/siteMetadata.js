@@ -6,7 +6,7 @@ const siteMetadata = {
   // snippets: 'Reuseable code snippets collected by Parth',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://google.com',
+  siteUrl: 'https://luca-blogs.vercel.app',
   siteRepo: 'https://github.com/lucaliebenberg/personal-blog-website',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/portfolio-image.png',
